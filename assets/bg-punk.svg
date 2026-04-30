@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1300" fill="none">
+  <rect width="900" height="1300" rx="36" fill="#f8fbff"/>
+  <rect x="18" y="18" width="864" height="1264" rx="34" stroke="#77b8ff" stroke-width="2"/>
+  <path d="M0 0h178L0 218V0ZM900 1300H672l228-228v228Z" fill="#64b7f8" opacity=".52"/>
+  <path d="M0 0h120L0 150V0ZM900 1300H750l150-150v150Z" fill="#7b75ff" opacity=".3"/>
+  <g stroke="#5ca6f5" stroke-width="3" stroke-linecap="round" opacity=".78">
+    <path d="M144 220h140l42-42h66M202 312h210l34-34h94M552 214h170l36 36h82"/>
+    <path d="M68 534h92l42 42h114M686 510h118l40-40h44M624 940h138l54-54h80"/>
+    <circle cx="144" cy="220" r="6"/><circle cx="392" cy="178" r="6"/><circle cx="540" cy="278" r="6"/><circle cx="804" cy="510" r="6"/><circle cx="762" cy="940" r="6"/>
+  </g>
+  <g stroke="#87c7ff" stroke-width="2" opacity=".65">
+    <path d="M80 96h170v36h-56v54H80V96Z"/><path d="M650 72h188v92h-72v50h-70v-50h-46V72Z"/>
+    <path d="M72 1040h166v82H72z"/><path d="M686 1036h172v92H686z"/>
+  </g>
+  <g fill="#5ca6f5" opacity=".55">
+    <rect x="78" y="506" width="8" height="8"/><rect x="108" y="506" width="8" height="8"/><rect x="138" y="506" width="8" height="8"/>
+    <rect x="78" y="536" width="8" height="8"/><rect x="108" y="536" width="8" height="8"/><rect x="138" y="536" width="8" height="8"/>
+    <rect x="764" y="360" width="8" height="8"/><rect x="794" y="360" width="8" height="8"/><rect x="824" y="360" width="8" height="8"/>
+    <rect x="764" y="390" width="8" height="8"/><rect x="794" y="390" width="8" height="8"/><rect x="824" y="390" width="8" height="8"/>
+  </g>
+  <g opacity=".55">
+    <path d="M46 1136 210 1282H46v-146Z" fill="#5ca6f5"/>
+    <path d="M854 164 690 18h164v146Z" fill="#7d74ff"/>
+  </g>
+  <path d="m450 1204 12 23 26 4-19 19 5 26-24-12-24 12 5-26-19-19 26-4 12-23Z" fill="#386ee8" opacity=".75"/>
+  <text x="450" y="1167" text-anchor="middle" fill="#2f52c9" font-family="'Times New Roman', serif" font-size="34" letter-spacing="8">期待與你見面</text>
+</svg>

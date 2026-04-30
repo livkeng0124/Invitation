@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ninilife 邀請卡製作器</title>
+    <meta
+      name="description"
+      content="製作可分享的線上邀請卡，讓受邀者選擇可參加時間或婉拒，並用 Email 回覆邀請人。"
+    />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="creator-shell" id="creatorView">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="回到邀請卡製作器">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>Ninilife</span>
+        </a>
+        <span class="topbar-divider" aria-hidden="true"></span>
+        <span class="topbar-title">邀請卡製作</span>
+        <a class="help-button" href="#helpPanel">使用教學</a>
+      </header>
+
+      <section class="builder-frame">
+        <form class="creator-panel" id="inviteForm">
+          <div class="section-heading">
+            <p class="eyebrow">Create Your Invitation</p>
+            <h1>製作你的邀請卡</h1>
+            <p>填寫內容、挑選風格，產生可以公開分享的邀請卡連結。</p>
+          </div>
+
+          <label class="step-field">
+            <span class="step-badge">1</span>
+            <span class="field-label">活動名稱</span>
+            <input
+              id="eventTitle"
+              name="eventTitle"
+              type="text"
+              maxlength="30"
+              placeholder="例如：生日聚會、咖啡時光、電影之夜"
+              required
+            />
+            <span class="field-counter" data-counter-for="eventTitle">0/30</span>
+          </label>
+
+          <label class="step-field">
+            <span class="step-badge">2</span>
+            <span class="field-label">活動日期</span>
+            <input id="eventDate" name="eventDate" type="date" required />
+          </label>
+
+          <div class="form-grid">
+            <label class="step-field">
+              <span class="step-badge">3</span>
+              <span class="field-label">邀請對象</span>
+              <input
+                id="guestName"
+                name="guestName"
+                type="text"
+                maxlength="24"
+                placeholder="例如：小安"
+              />
+            </label>
+
+            <label class="step-field">
+              <span class="step-badge">4</span>
+              <span class="field-label">地點或活動方式</span>
+              <input
+                id="eventPlace"
+                name="eventPlace"
+                type="text"
+                maxlength="60"
+                placeholder="例如：台北信義區 / 線上視訊"
+              />
+            </label>
+          </div>
+
+          <fieldset class="step-field time-fieldset">
+            <legend>
+              <span class="step-badge">5</span>
+              <span class="field-label">可選擇的時間</span>
+            </legend>
+            <div class="time-inputs">
+              <input
+                id="timeOption1"
+                name="timeOption1"
+                type="text"
+                maxlength="24"
+                placeholder="例如：12:00 - 14:00"
+                required
+              />
+              <input
+                id="timeOption2"
+                name="timeOption2"
+                type="text"
+                maxlength="24"
+                placeholder="例如：15:00 - 17:00"
+                required
+              />
+              <input
+                id="timeOption3"
+                name="timeOption3"
+                type="text"
+                maxlength="24"
+                placeholder="例如：18:00 - 20:00"
+                required
+              />
+            </div>
+            <p class="field-note">受邀者會從這三個時間中選擇一個，或回覆無法參加。</p>
+          </fieldset>
+
+          <label class="step-field">
+            <span class="step-badge">6</span>
+            <span class="field-label">想對受邀者說的話</span>
+            <textarea
+              id="hostMessage"
+              name="hostMessage"
+              rows="4"
+              maxlength="120"
+              placeholder="我想對你說...."
+            ></textarea>
+            <span class="field-counter" data-counter-for="hostMessage">0/120</span>
+          </label>
+
+          <div class="form-grid">
+            <label class="step-field">
+              <span class="step-badge">7</span>
+              <span class="field-label">邀請人名稱</span>
+              <input
+                id="hostName"
+                name="hostName"
+                type="text"
+                maxlength="24"
+                placeholder="例如：Hannah"
+                required
+              />
+            </label>
+
+            <label class="step-field">
+              <span class="step-badge">8</span>
+              <span class="field-label">接收回覆 Email</span>
+              <input
+                id="hostEmail"
+                name="hostEmail"
+                type="email"
+                maxlength="100"
+                placeholder="you@example.com"
+                required
+              />
+            </label>
+          </div>
+
+          <label class="step-field">
+            <span class="step-badge">9</span>
+            <span class="field-label">公開網站網址</span>
+            <input
+              id="publicBaseUrl"
+              name="publicBaseUrl"
+              type="url"
+              inputmode="url"
+              placeholder="已放上 GitHub Pages 後可填，例如 https://name.github.io/invite/"
+            />
+            <span class="field-note">留空會使用目前頁面網址；正式分享前建議填入 GitHub Pages 網址。</span>
+          </label>
+
+          <fieldset class="style-picker">
+            <legend>
+              <span class="step-badge">10</span>
+              <span class="field-label">選擇卡片風格</span>
+            </legend>
+            <label class="style-card style-clean">
+              <input type="radio" name="cardStyle" value="clean" checked />
+              <span class="style-preview" aria-hidden="true"></span>
+              <span>簡潔俐落</span>
+            </label>
+            <label class="style-card style-sweet">
+              <input type="radio" name="cardStyle" value="sweet" />
+              <span class="style-preview" aria-hidden="true"></span>
+              <span>甜美可愛</span>
+            </label>
+            <label class="style-card style-french">
+              <input type="radio" name="cardStyle" value="french" />
+              <span class="style-preview" aria-hidden="true"></span>
+              <span>法式浪漫</span>
+            </label>
+            <label class="style-card style-wonder">
+              <input type="radio" name="cardStyle" value="wonder" />
+              <span class="style-preview" aria-hidden="true"></span>
+              <span>童趣異想</span>
+            </label>
+            <label class="style-card style-punk">
+              <input type="radio" name="cardStyle" value="punk" />
+              <span class="style-preview" aria-hidden="true"></span>
+              <span>龐克酷炫</span>
+            </label>
+          </fieldset>
+
+          <div class="share-card">
+            <button class="primary-button" type="submit">生成我的邀請卡</button>
+            <p class="share-lock">生成後可分享連結給朋友填寫並回覆。</p>
+            <div class="share-actions" id="shareActions" aria-label="分享邀請卡">
+              <button class="soft-button" type="button" id="copyLinkButton" disabled>
+                複製連結
+              </button>
+              <button class="soft-button" type="button" id="openGuestButton" disabled>
+                預覽回覆頁
+              </button>
+              <button class="soft-button" type="button" id="emailButton" disabled>
+                Email 邀請
+              </button>
+              <button class="line-button" type="button" id="lineButton" disabled>
+                分享到 LINE
+              </button>
+            </div>
+            <p class="status-text" id="shareStatus" aria-live="polite"></p>
+            <label class="generated-link" id="generatedLinkWrap" hidden>
+              <span>邀請卡連結</span>
+              <input id="generatedLink" type="url" readonly />
+            </label>
+          </div>
+        </form>
+
+        <aside class="preview-panel">
+          <div class="preview-heading">
+            <div>
+              <p class="eyebrow">Live Preview</p>
+              <h2>邀請卡預覽</h2>
+            </div>
+            <span class="preview-pill">即時更新</span>
+          </div>
+
+          <article class="invite-card theme-clean" id="previewCard" aria-label="邀請卡預覽">
+            <div class="card-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="card-body">
+              <p class="script-label">You're Invited</p>
+              <p class="card-kicker">邀請您參加</p>
+              <h2 id="previewTitle">生日聚會</h2>
+              <div class="card-date">
+                <span class="icon" aria-hidden="true">□</span>
+                <span id="previewDate">2026 / 06 / 06（六）</span>
+              </div>
+              <p class="card-place" id="previewPlace">台北信義區</p>
+              <div class="section-divider"></div>
+              <p class="time-title">可參加的時間</p>
+              <div class="card-times" id="previewTimes"></div>
+              <div class="message-box">
+                <span class="message-icon" aria-hidden="true">…</span>
+                <p id="previewMessage">我想對你說....很想和你一起留一段舒服又好聊的時間。</p>
+              </div>
+              <div class="response-row preview-only" aria-hidden="true">
+                <span class="reply-primary">選擇時間參加</span>
+                <span class="reply-decline">已有安排，無法參加</span>
+              </div>
+              <p class="card-footer" id="previewHost">Hannah 邀請你</p>
+            </div>
+          </article>
+
+          <section class="hint-card" id="helpPanel">
+            <h3>小提示</h3>
+            <p>生成邀請卡後，把連結分享給朋友。朋友打開後選時間或婉拒，再用 Email 回覆你。</p>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <main class="guest-shell" id="guestView" hidden>
+      <section class="guest-frame">
+        <article class="invite-card theme-clean public-card" id="publicCard">
+          <div class="card-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="card-body">
+            <p class="script-label">You're Invited</p>
+            <p class="card-kicker">邀請您參加</p>
+            <h1 id="publicTitle">邀請卡</h1>
+            <p class="guest-line" id="publicGuest">給 你</p>
+            <div class="card-date">
+              <span class="icon" aria-hidden="true">□</span>
+              <span id="publicDate"></span>
+            </div>
+            <p class="card-place" id="publicPlace"></p>
+            <div class="section-divider"></div>
+            <p class="time-title">請選擇可參加時間</p>
+            <div class="card-times interactive-times" id="publicTimes"></div>
+            <div class="message-box">
+              <span class="message-icon" aria-hidden="true">…</span>
+              <p id="publicMessage"></p>
+            </div>
+            <button class="decline-card-button" type="button" id="publicDeclineButton">
+              已有安排，無法參加
+            </button>
+            <p class="card-footer" id="publicHost"></p>
+          </div>
+        </article>
+
+        <section class="response-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Reply</p>
+            <h2>送出你的回覆</h2>
+            <p>選擇時間或婉拒後，系統會準備一封回覆信給邀請人。</p>
+          </div>
+
+          <label class="step-field compact-field">
+            <span class="field-label">你的稱呼</span>
+            <input
+              id="responderName"
+              type="text"
+              maxlength="24"
+              placeholder="例如：小安"
+            />
+          </label>
+
+          <div class="response-summary" id="responseSummary">尚未選擇回覆</div>
+
+          <label class="step-field compact-field">
+            <span class="field-label">補充留言</span>
+            <textarea
+              id="responderNote"
+              rows="4"
+              maxlength="120"
+              placeholder="想補充的話可以寫在這裡"
+            ></textarea>
+          </label>
+
+          <div class="response-actions">
+            <button class="primary-button" type="button" id="sendResponseButton" disabled>
+              寄出回覆 Email
+            </button>
+            <button class="soft-button" type="button" id="copyResponseButton" disabled>
+              複製回覆內容
+            </button>
+          </div>
+
+          <p class="status-text" id="responseStatus" aria-live="polite"></p>
+          <a class="text-link" href="./" id="makeOwnLink">我也想做一張邀請卡</a>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

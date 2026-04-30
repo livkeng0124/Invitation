@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1300" fill="none">
+  <rect width="900" height="1300" rx="36" fill="#fffdfb"/>
+  <rect x="18" y="18" width="864" height="1264" rx="34" stroke="#d8cec5" stroke-width="2"/>
+  <path d="M654-68c33 166 128 241 300 301M710-100c21 155 106 236 264 303" stroke="#d5c8bd" stroke-width="2"/>
+  <path d="M-116 1031c163 72 231 169 258 331M-102 1087c137 52 205 133 239 273" stroke="#d5c8bd" stroke-width="2"/>
+  <g stroke="#817b73" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".78">
+    <path d="M76 204c49-80 92-126 142-167M76 204c2-48-2-91-20-130M76 204c47-25 87-49 124-81"/>
+    <path d="M57 75c27 42 31 77 12 114-28-37-31-74-12-114ZM125 115c19-39 43-63 81-77-10 45-34 69-81 77ZM159 138c33-18 62-24 96-16-26 25-58 30-96 16ZM105 173c31-8 58-5 83 11-32 14-59 10-83-11Z"/>
+    <path d="M725 1088c46-58 86-93 136-122M725 1088c-7-39-18-73-41-102M725 1088c37-11 70-25 100-48"/>
+    <path d="M684 987c30 28 41 57 32 90-32-24-43-54-32-90ZM751 1016c13-34 33-57 65-74-3 39-24 63-65 74ZM781 1042c32-11 58-11 86 2-22 23-50 23-86-2Z"/>
+  </g>
+  <g opacity=".65" fill="#cfc8c0">
+    <circle cx="87" cy="1145" r="5"/><circle cx="117" cy="1145" r="5"/><circle cx="147" cy="1145" r="5"/><circle cx="177" cy="1145" r="5"/>
+    <circle cx="87" cy="1178" r="5"/><circle cx="117" cy="1178" r="5"/><circle cx="147" cy="1178" r="5"/><circle cx="177" cy="1178" r="5"/>
+    <circle cx="87" cy="1211" r="5"/><circle cx="117" cy="1211" r="5"/><circle cx="147" cy="1211" r="5"/><circle cx="177" cy="1211" r="5"/>
+  </g>
+  <path d="M428 1196c10-19 38-14 38 10 0 23-38 41-38 41s-38-18-38-41c0-24 28-29 38-10Z" stroke="#a49b92" stroke-width="2" opacity=".72"/>
+  <text x="450" y="1178" text-anchor="middle" fill="#b6ada5" font-family="Georgia, serif" font-size="38" font-style="italic">Thank you!</text>
+</svg>
