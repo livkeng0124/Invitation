@@ -331,7 +331,7 @@ h3 {
 }
 
 .style-sweet .style-preview {
-  background-image: url("assets/bg-sweet.svg");
+  background-image: url("assets/romantic-bg.png");
 }
 
 .style-french .style-preview {
@@ -735,7 +735,7 @@ h3 {
 }
 
 .theme-sweet {
-  --card-bg: url("assets/bg-sweet.svg");
+  --card-bg: url("assets/romantic-bg.png");
   --card-ink: #3d2b34;
   --card-muted: #916878;
   --card-accent: #ec6e9a;
