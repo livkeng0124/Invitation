@@ -339,7 +339,7 @@ h3 {
 }
 
 .style-wonder .style-preview {
-  background-image: url("assets/bg-wonder.svg");
+  background-image: url("assets/cute.png");
 }
 
 .style-punk .style-preview {
@@ -757,7 +757,7 @@ h3 {
 }
 
 .theme-wonder {
-  --card-bg: url("assets/bg-wonder.svg");
+  --card-bg: url("assets/cute.png");
   --card-ink: #3a3442;
   --card-muted: #7a6b88;
   --card-accent: #ee6597;
