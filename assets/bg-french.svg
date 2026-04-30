@@ -1,25 +1,134 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1300" fill="none">
-  <rect width="900" height="1300" rx="36" fill="#fffaf5"/>
-  <rect x="18" y="18" width="864" height="1264" rx="34" stroke="#d8b8b5" stroke-width="2"/>
-  <g opacity=".68">
-    <path d="M0 0h310C248 126 139 191 0 214V0Z" fill="#f4dbda"/>
-    <path d="M900 1300H610c49-128 147-201 290-234v234Z" fill="#f3ddd9"/>
+  <defs>
+    <radialGradient id="paperGlow" cx="50%" cy="43%" r="70%">
+      <stop offset="0" stop-color="#fffefa"/>
+      <stop offset=".62" stop-color="#fff8f2"/>
+      <stop offset="1" stop-color="#f8e8e5"/>
+    </radialGradient>
+    <radialGradient id="roseWash" cx="14%" cy="8%" r="32%">
+      <stop offset="0" stop-color="#f2b8bd" stop-opacity=".46"/>
+      <stop offset=".58" stop-color="#f6d8d4" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#fff8f2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lowerWash" cx="22%" cy="92%" r="38%">
+      <stop offset="0" stop-color="#efc3bd" stop-opacity=".42"/>
+      <stop offset=".58" stop-color="#f8ded8" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#fff8f2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lavenderWash" cx="88%" cy="74%" r="34%">
+      <stop offset="0" stop-color="#d8cadb" stop-opacity=".34"/>
+      <stop offset=".65" stop-color="#eee5ea" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#fff8f2" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.15"/>
+    </filter>
+    <g id="leafSprig">
+      <path d="M0 0c33-46 70-82 118-108" stroke="#8c8d78" stroke-width="3" stroke-linecap="round"/>
+      <path d="M20-25c28 0 46 13 55 39-30 4-49-10-55-39Z" fill="#a4aa91"/>
+      <path d="M48-57c30-6 53 4 68 30-32 11-55 1-68-30Z" fill="#b5b59e"/>
+      <path d="M83-83c27-12 51-8 72 13-27 16-52 12-72-13Z" fill="#929987"/>
+      <path d="M17-3c17 19 19 38 5 58-21-18-23-37-5-58Z" fill="#a7a18e"/>
+      <path d="M61-31c19 17 24 36 13 59-23-15-27-35-13-59Z" fill="#b9b198"/>
+    </g>
+    <g id="rose">
+      <circle cx="0" cy="0" r="26" fill="#efb3b6"/>
+      <path d="M-23-2c7-30 45-34 54-4-18-10-35-8-54 4Z" fill="#f8d2cf"/>
+      <path d="M-18 11c13-24 42-24 55 0-19 4-37 4-55 0Z" fill="#e59ba1"/>
+      <path d="M-2-24c23 8 30 32 15 50-8-18-13-33-15-50Z" fill="#f3c2c2"/>
+      <path d="M-30 10c20 6 33 18 40 38-25-1-39-14-40-38Z" fill="#eab2af"/>
+    </g>
+    <g id="smallBloom">
+      <path d="M0-18c13 12 14 24 2 37-13-11-14-24-2-37Z" fill="#e9a6ab"/>
+      <path d="M17-2C5 11-8 12-20 0-7-13 5-14 17-2Z" fill="#f1c6c1"/>
+      <path d="M10 14c-15 5-27 0-35-14 16-5 28 0 35 14Z" fill="#e7b3b5"/>
+      <circle cx="0" cy="0" r="4" fill="#b98a72"/>
+    </g>
+  </defs>
+
+  <rect width="900" height="1300" rx="38" fill="url(#paperGlow)"/>
+  <rect width="900" height="1300" rx="38" fill="url(#roseWash)"/>
+  <rect width="900" height="1300" rx="38" fill="url(#lowerWash)"/>
+  <rect width="900" height="1300" rx="38" fill="url(#lavenderWash)"/>
+  <rect x="18" y="18" width="864" height="1264" rx="36" stroke="#d9b6b1" stroke-width="2.2"/>
+
+  <g opacity=".18" filter="url(#softBlur)">
+    <path d="M52 118c128-86 236-83 350 8M54 164c138-68 246-56 338 33M492 61c124-62 226-54 329 23M-16 1045c140-38 249-3 326 97M501 1196c129-79 248-87 355-25" stroke="#d9b6b1" stroke-width="18" stroke-linecap="round"/>
   </g>
-  <g stroke="#8f8879" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".7">
-    <path d="M33 126c119 36 207 5 285-82M62 100c33-49 75-75 126-78M121 128c43-46 92-65 148-56"/>
-    <path d="M90 57c38 10 56 32 54 66-39-7-57-30-54-66ZM155 34c45-3 75 15 91 54-48 7-78-11-91-54ZM205 80c43-14 77-6 103 26-43 17-78 9-103-26Z"/>
-    <path d="M585 60c92 49 175 47 283-14M656 73c39-37 84-53 136-47M724 103c44-28 86-36 127-22"/>
-    <path d="M53 1170c103-34 183-19 264 55M90 1212c32 36 73 53 125 50M129 1164c39 33 82 44 131 31"/>
-    <path d="M582 1215c104-14 183-56 264-143M641 1166c41 16 82 13 124-10M704 1116c52 10 95 2 128-25"/>
+
+  <g opacity=".84">
+    <g transform="translate(40 118) rotate(-4)">
+      <use href="#leafSprig"/>
+      <use href="#leafSprig" transform="translate(56 70) rotate(56) scale(.78)"/>
+      <use href="#rose" transform="translate(48 -44) scale(1.45)"/>
+      <use href="#rose" transform="translate(112 -18) scale(.8)"/>
+      <use href="#smallBloom" transform="translate(166 -72) scale(1.1)"/>
+      <use href="#smallBloom" transform="translate(218 -36) scale(.72)"/>
+      <path d="M4 12c88 30 171 10 248-58" stroke="#9a9984" stroke-width="2" opacity=".65" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(50 340) rotate(13)">
+      <use href="#leafSprig" transform="scale(.86)"/>
+      <use href="#smallBloom" transform="translate(118 -88) scale(.72)"/>
+    </g>
+    <g transform="translate(686 88) rotate(18)">
+      <use href="#leafSprig" transform="scale(.72)"/>
+      <use href="#leafSprig" transform="translate(76 30) rotate(55) scale(.52)"/>
+      <use href="#smallBloom" transform="translate(155 -79) scale(.95)"/>
+      <use href="#smallBloom" transform="translate(110 4) scale(.62)"/>
+    </g>
+    <g transform="translate(762 494) rotate(26)">
+      <use href="#leafSprig" transform="scale(.78)"/>
+      <use href="#smallBloom" transform="translate(132 -86) scale(.68)"/>
+      <use href="#smallBloom" transform="translate(84 -22) scale(.48)"/>
+    </g>
   </g>
-  <g opacity=".8">
-    <circle cx="94" cy="83" r="26" fill="#e8b8b8"/><circle cx="142" cy="62" r="18" fill="#f1d0d1"/><circle cx="767" cy="105" r="22" fill="#e8b8b8"/>
-    <circle cx="78" cy="1190" r="24" fill="#e8b8b8"/><circle cx="807" cy="1117" r="24" fill="#e8b8b8"/><circle cx="756" cy="1184" r="17" fill="#d8c3dc"/>
+
+  <g opacity=".9">
+    <g transform="translate(28 1076) rotate(-10)">
+      <use href="#leafSprig" transform="scale(1.12)"/>
+      <use href="#leafSprig" transform="translate(84 38) rotate(42) scale(.82)"/>
+      <use href="#leafSprig" transform="translate(177 41) rotate(16) scale(.68)"/>
+      <use href="#rose" transform="translate(42 -38) scale(1.35)"/>
+      <use href="#rose" transform="translate(128 8) scale(1.05)"/>
+      <use href="#smallBloom" transform="translate(205 -52) scale(.9)"/>
+      <use href="#smallBloom" transform="translate(244 30) scale(.66)"/>
+    </g>
+    <g transform="translate(558 1198) rotate(-18)">
+      <use href="#leafSprig" transform="scale(1.08)"/>
+      <use href="#leafSprig" transform="translate(96 26) rotate(44) scale(.86)"/>
+      <use href="#rose" transform="translate(192 -58) scale(1.1)"/>
+      <use href="#rose" transform="translate(248 -10) scale(.76)"/>
+      <use href="#smallBloom" transform="translate(116 -74) scale(.78)"/>
+      <use href="#smallBloom" transform="translate(306 -44) scale(.65)"/>
+    </g>
   </g>
-  <g transform="translate(740 965)" stroke="#a89082" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".74">
-    <path d="M58 6C40 98 29 168 10 255M58 6c18 92 29 168 48 255M31 119h54M22 171h72M14 224h88M37 80h42"/>
-    <path d="M31 261c10-52 18-78 27-78s17 26 27 78"/>
+
+  <g opacity=".42" fill="#d59198">
+    <path d="M162 529c28-16 54-11 77 15-31 20-56 15-77-15Z"/>
+    <path d="M690 805c26-15 50-10 71 14-29 18-53 13-71-14Z"/>
+    <path d="M769 345c19-11 36-7 51 10-21 13-38 10-51-10Z"/>
+    <path d="M344 1107c16-9 31-6 44 9-18 11-33 8-44-9Z"/>
   </g>
-  <path d="M390 1152c11-20 40-15 40 11 0 25-40 43-40 43s-40-18-40-43c0-26 29-31 40-11Z" fill="#b88691" opacity=".8"/>
-  <text x="450" y="1194" text-anchor="middle" fill="#b88691" font-family="Georgia, serif" font-size="38" font-style="italic">Thank you!</text>
+  <g opacity=".34" fill="#c4b8cb">
+    <circle cx="745" cy="542" r="7"/>
+    <circle cx="672" cy="918" r="5"/>
+    <circle cx="205" cy="914" r="5"/>
+    <circle cx="812" cy="982" r="6"/>
+  </g>
+
+  <g transform="translate(744 958)" stroke="#9f8676" stroke-linecap="round" stroke-linejoin="round" opacity=".72">
+    <path d="M58 2C44 85 31 165 10 268M58 2c14 83 27 165 48 268" stroke-width="4.6"/>
+    <path d="M22 143h72M14 195h88M4 257h108M36 88h44M28 116h60" stroke-width="4"/>
+    <path d="M28 270c9-54 19-83 30-83s21 29 30 83" stroke-width="4"/>
+    <path d="M58 2 44 38h28L58 2ZM31 143l54 52M85 143l-63 52M14 195l88 62M102 195 4 257" stroke-width="2.8" opacity=".9"/>
+  </g>
+
+  <g opacity=".76">
+    <path d="M396 112c22-6 43-9 64-9 20 0 41 3 63 9" stroke="#bd9488" stroke-width="2" stroke-linecap="round"/>
+    <path d="M405 124c12 9 24 9 36 0M480 124c12 9 24 9 36 0" stroke="#bd9488" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M460 113c7-12 25-7 25 8 0 16-25 28-25 28s-25-12-25-28c0-15 18-20 25-8Z" fill="#bd9488"/>
+  </g>
+
+  <path d="M423 1088c11-20 40-15 40 10 0 25-40 43-40 43s-40-18-40-43c0-25 29-30 40-10Z" fill="#b9858c" opacity=".82"/>
+  <text x="450" y="1166" text-anchor="middle" fill="#b9858c" font-family="Georgia, serif" font-size="38" font-style="italic">Thank you!</text>
 </svg>
