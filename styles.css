@@ -747,13 +747,13 @@ h3 {
 
 .theme-french {
   --card-bg: url("assets/bg-french.svg");
-  --card-ink: #46313a;
-  --card-muted: #92777d;
-  --card-accent: #a97480;
-  --card-accent-2: #cf9da6;
+  --card-ink: #473339;
+  --card-muted: #967a78;
+  --card-accent: #a87782;
+  --card-accent-2: #d0a1a9;
   --card-soft: rgba(169, 116, 128, 0.12);
-  --card-line: rgba(169, 116, 128, 0.36);
-  --card-shadow: rgba(119, 84, 92, 0.16);
+  --card-line: rgba(174, 132, 126, 0.38);
+  --card-shadow: rgba(119, 84, 92, 0.18);
 }
 
 .theme-wonder {
