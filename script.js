@@ -4,7 +4,7 @@ const styleNames = {
   sweet: "甜美可愛",
   french: "法式浪漫",
   wonder: "童趣異想",
-  punk: "龐克酷炫",
+  punk: "清新科技",
 };
 
 const styleAliases = {
@@ -12,15 +12,15 @@ const styleAliases = {
 };
 
 const defaults = {
-  eventTitle: "生日聚會",
+  eventTitle: "Party time",
   eventDate: "2026-06-06",
-  guestName: "小安",
-  hostName: "Hannah",
+  guestName: "妮妮",
+  hostName: "Hans",
   hostEmail: "",
-  eventPlace: "台北信義區",
+  eventPlace: "台北板橋區",
   cardStyle: "clean",
   timeOptions: ["12:00 - 14:00", "15:00 - 17:00", "18:00 - 20:00"],
-  hostMessage: "我想對你說....很想和你一起留一段舒服又好聊的時間。",
+  hostMessage: "我想對你說....讓我們一起共同享有一段自在美好的時光。",
 };
 
 const creatorView = document.querySelector("#creatorView");
@@ -385,12 +385,12 @@ function renderGuestInvite(invite) {
   );
 
   document.querySelector("#responderName").value = publicInvite.guestName || "";
-  publicDeclineButton.dataset.responseValue = "已有安排，無法參加";
+  publicDeclineButton.dataset.responseValue = "已有安排，相約他日";
   publicDeclineButton.setAttribute("aria-pressed", "false");
   publicDeclineButton.addEventListener("click", () => {
     selectResponse({
-      value: "已有安排，無法參加",
-      label: "已有安排，無法參加",
+      value: "已有安排，相約他日",
+      label: "已有安排，相約他日",
       attending: false,
     });
   });
